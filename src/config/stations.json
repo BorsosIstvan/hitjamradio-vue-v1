@@ -16,11 +16,19 @@
     "payload": "YAK6X1XroEM"
   },
   {
-    "id": "radio538",
-    "name": "Radio 538",
-    "genre": "Holland slágerek",
-    "logo": "🇳🇱",
-    "type": "native_mp3",
-    "payload": "https://538.nl"
+    "id": "hitsradio1",
+    "name": "HITS radio 1",
+    "genre": "Top Hits 2026",
+    "logo": "🎵",
+    "type": "youtube",
+    "payload": "3MOrgUjiigE"
+  },
+  {
+    "id": "pophitsradio",
+    "name": "Pop hits radio",
+    "genre": "Pop Hits 2026",
+    "logo": "🎵",
+    "type": "youtube",
+    "payload": "40GqAOnQGoA"
   }
 ]
