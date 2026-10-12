@@ -4,6 +4,8 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  // JAVÍTÁS: Dit zorgt ervoor dat alle bestanden relatief en correct laden op GitHub Pages
+  base: './',
   plugins: [
     vue(),
     VitePWA({
@@ -32,7 +34,6 @@ export default defineConfig({
         ]
       },
       workbox: {
-        // Gyorsítótárazzuk a statikus fájlokat az offline működéshez
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       }
     })
