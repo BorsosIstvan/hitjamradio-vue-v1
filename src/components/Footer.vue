@@ -20,7 +20,12 @@ const emit = defineEmits(['toggle-admin']);
         Módosítási fázis aktív
       </span>
       <div style="margin-top: 10px;">
-        © HITJAM-PARTY STYLE • COMPONENT PWA v5.0
+        <p class="footer-row-1">
+            © 2026 HitJam Radio • Powered by Raspberry Pi, Vue & GitHub
+        </p>
+        <p class="footer-row-2">
+            Audio Streams & Metadata via iTunes API • Built with JBL Sound System Compatibility
+        </p>
       </div>
     </div>
   </footer>
