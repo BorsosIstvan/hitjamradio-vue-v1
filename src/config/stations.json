@@ -1,0 +1,26 @@
+[
+  {
+    "id": "petofi",
+    "name": "Petőfi Rádió",
+    "genre": "Mai magyar zenék",
+    "logo": "🎤",
+    "type": "youtube",
+    "payload": "obO_OBfncJg"
+  },
+  {
+    "id": "radio1",
+    "name": "Rádió 1",
+    "genre": "A mai igazi mai slágerek",
+    "logo": "🔊",
+    "type": "youtube",
+    "payload": "YAK6X1XroEM"
+  },
+  {
+    "id": "radio538",
+    "name": "Radio 538",
+    "genre": "Holland slágerek",
+    "logo": "🇳🇱",
+    "type": "native_mp3",
+    "payload": "https://538.nl"
+  }
+]
