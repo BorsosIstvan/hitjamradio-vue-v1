@@ -14,6 +14,7 @@ export default defineConfig({
       manifest: {
         name: 'HitJamRadio',
         short_name: 'HitJam',
+        version: '1.1.0',
         description: 'Egyedi, reklámmentes internetes rádió autós módhoz',
         theme_color: '#0b0c10',
         background_color: '#0b0c10',

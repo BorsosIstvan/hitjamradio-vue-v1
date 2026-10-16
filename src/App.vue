@@ -11,6 +11,7 @@ import PlayButton from './components/PlayButton.vue';
 import Admin from './components/Admin.vue';
 import Footer from './components/Footer.vue';
 import HitsList from './components/HitsList.vue';
+import UpdatePrompt from './components/UpdatePrompt.vue';
 
 // Schakelaar voor de Admin-weergave
 const isAdminView = ref(false);
@@ -70,6 +71,7 @@ const handleTogglePlay = () => {
       <PlayButton :is-playing="isPlaying" :is-loading="isLoading" @toggle="handleTogglePlay" />
     </div>
     <HitsList />
+    <UpdatePrompt />
 
     <!-- 4. DE UNIVERSELE FOOTER-ZONE (Altijd onderaan) -->
     <Footer :is-admin-view="isAdminView" @toggle-admin="isAdminView = true" />
