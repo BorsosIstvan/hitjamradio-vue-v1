@@ -30,5 +30,45 @@
     "logo": "🎵",
     "type": "youtube",
     "payload": "40GqAOnQGoA"
+  },
+  {
+    "id": "radiogagagyergyo",
+    "name": "GAGA Gyergyó",
+    "genre": "Rádió Gaga Gyergyószentmiklós",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/gye?1792185529"
+  },
+  {
+    "id": "radiogagarock",
+    "name": "GAGA Rock",
+    "genre": "Rádió Gaga Rock",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/rck?1792186745"
+  },
+  {
+    "id": "radiogagahun",
+    "name": "100 % Magyar",
+    "genre": "Rádió Gaga 100 % Magyar zene",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/hun?1792187195"
+  },
+  {
+    "id": "radiogagagold",
+    "name": "Rádió GAGA Gold",
+    "genre": "Gaga Gold",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/gld?1792187343"
+  },
+  {
+    "id": "lepesradio",
+    "name": "Lépés Rádió",
+    "genre": "It's rock baby! A legjobb rock slágerek",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://lepesradio.hu/live.mp3"
   }
 ]

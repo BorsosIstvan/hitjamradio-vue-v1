@@ -8,7 +8,7 @@ const playerStore = usePlayerStore();
       v-for="station in playerStore.stationsList"
       :key="station.id"
       class="quiz-btn" 
-      :style="playerStore.currentStation?.id === station.id && isPlaying ? 'border-color: #ff4500; background: rgba(255, 69, 0, 0.2); box-shadow: 0 0 15px #ff4500;' : ''"
+      :style="playerStore.currentStation?.id === station.id && playerStore.isPlaying ? 'border-color: #ff4500; background: rgba(255, 69, 0, 0.2); box-shadow: 0 0 15px #ff4500;' : ''"
       @click="playerStore.play(station)"
     >
       <span style="font-size: 32px; display: block; margin-bottom: 8px;">{{ station.logo }}</span>
