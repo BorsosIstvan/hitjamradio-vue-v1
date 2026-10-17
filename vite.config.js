@@ -15,7 +15,7 @@ export default defineConfig({
         short_name: 'HitJam',
         description: 'Egyedi, reklámmentes internetes rádió autós módhoz',
         theme_color: '#0b0c10',
-        vackground_color: '#0b0c10',
+        background_color: '#0b0c10',
         display: 'standalone',
         orientation: 'portrait',
         icons: [
