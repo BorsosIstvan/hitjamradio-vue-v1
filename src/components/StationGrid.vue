@@ -1,11 +1,16 @@
 <script setup>
+import { computed } from 'vue';
 import { usePlayerStore } from '../stores/playerStore';
 const playerStore = usePlayerStore();
+// Létrehozunk egy szűrt listát, ami csak a show: true adókat tartalmazza
+const visibleStations = computed(() => {
+  return playerStore.stationsList.filter(station => station.show === true);
+});
 </script>
 <template>
   <div v-if="!playerStore.youtubeSrc" class="quiz-grid">
     <button 
-      v-for="station in playerStore.stationsList"
+      v-for="station in visibleStations"
       :key="station.id"
       class="quiz-btn" 
       :style="playerStore.currentStation?.id === station.id && playerStore.isPlaying ? 'border-color: #ff4500; background: rgba(255, 69, 0, 0.2); box-shadow: 0 0 15px #ff4500;' : ''"

@@ -15,7 +15,6 @@ import PlayButton from './components/PlayButton.vue';
     <YoutubeView />
     <StationGrid />
     <PlayButton />
-    <HitsList />
     <Footer />
   </div>
 </template>

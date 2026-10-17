@@ -1,74 +1,128 @@
 [
   {
-    "id": "petofi",
+    "id": "petofiradio",
     "name": "Petőfi Rádió",
-    "genre": "Mai magyar zenék",
-    "logo": "🎤",
-    "type": "youtube",
-    "payload": "obO_OBfncJg"
+    "genre": "A hazai könnyűzene és a legújabb magyar slágerek",
+    "logo": "📻",
+    "type": "native_mp3",
+    "payload": "https://icast.connectmedia.hu/4738/mr2.mp3",
+    "show": true
   },
   {
     "id": "radio1",
     "name": "Rádió 1",
-    "genre": "A mai igazi mai slágerek",
+    "genre": "A mai igazi mai világslágerek és mixműsorok",
+    "logo": "🔥",
+    "type": "native_mp3",
+    "payload": "https://icast.connectmedia.hu/5201/live.mp3",
+    "show": true
+  },
+  {
+    "id": "retro",
+    "name": "Retro Rádió",
+    "genre": "A 60-as, 70-es és 80-as évek legnagyobb klasszikusai",
+    "logo": "🕺",
+    "type": "native_mp3",
+    "payload": "https://icast.connectmedia.hu/5001/live.mp3",
+    "show": true
+  },
+  {
+    "id": "slagerfm",
+    "name": "Sláger FM",
+    "genre": "A legnagyobb retró és dallamos popslágerek",
+    "logo": "🕶️",
+    "type": "native_mp3",
+    "payload": "https://slagerfm.netregator.hu:7813/slagerfm128.mp3",
+    "show": true
+  },
+  {
+    "id": "gaga_gyergyo",
+    "name": "GAGA Gyergyó",
+    "genre": "Rádió Gaga Gyergyószentmiklós helyi hírei és zenéi",
+    "logo": "🏔️",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/gye?1792185529",
+    "show": true
+  },
+  {
+    "id": "gaga_rock",
+    "name": "GAGA Rock",
+    "genre": "A legjobb hazai és nemzetközi rock és metal himnuszok",
+    "logo": "🎸",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/rck?1792186745",
+    "show": true
+  },
+  {
+    "id": "gaga_hun",
+    "name": "100 % Magyar",
+    "genre": "Kizárólag magyar nyelvű slágerek minden korszakból",
+    "logo": "🇭🇺",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/hun?1792187195",
+    "show": true
+  },
+  {
+    "id": "gaga_gold",
+    "name": "Rádió GAGA Gold",
+    "genre": "Az elmúlt évtizedek felejthetetlen arany slágerei",
+    "logo": "🏆",
+    "type": "native_mp3",
+    "payload": "https://stream.igenbiza.com/gld?1792187343",
+    "show": true
+  },
+  {
+    "id": "szepvizfm",
+    "name": "Szépvízfm",
+    "genre": "Csíkszeredában és környékén a 101,7 MHz-en",
+    "logo": "🌲",
+    "type": "native_mp3",
+    "payload": "https://szepvizfm.ro:8000/stream",
+    "show": true
+  },
+  {
+    "id": "proba",
+    "name": "Proba FM",
+    "genre": "Kísérleti tesztcsatorna és háttérzene",
+    "logo": "🛠️",
+    "type": "native_mp3",
+    "payload": "https://icast.connectmedia.hu/5002/live.mp",
+    "show": true
+  },
+  {
+    "id": "petofi_yt",
+    "name": "Petőfi Rádió (YT)",
+    "genre": "Mai magyar zenék élő videós közvetítése a YouTube-ról",
+    "logo": "🎤",
+    "type": "youtube",
+    "payload": "obO_OBfncJg",
+    "show": false
+  },
+  {
+    "id": "radio1_yt",
+    "name": "Rádió 1 (YT)",
+    "genre": "A mai igazi mai slágerek élő videó közvetítése",
     "logo": "🔊",
     "type": "youtube",
-    "payload": "YAK6X1XroEM"
+    "payload": "YAK6X1XroEM",
+    "show": false
   },
   {
     "id": "hitsradio1",
     "name": "HITS radio 1",
-    "genre": "Top Hits 2026",
+    "genre": "A legfrissebb nemzetközi Top Hits popslágerek és toplisták",
     "logo": "🎵",
     "type": "youtube",
-    "payload": "3MOrgUjiigE"
+    "payload": "3MOrgUjiigE",
+    "show": false
   },
   {
     "id": "pophitsradio",
     "name": "Pop hits radio",
-    "genre": "Pop Hits 2026",
-    "logo": "🎵",
+    "genre": "Világszintű Pop Hits válogatás a legnépszerűbb dalokból",
+    "logo": "🎧",
     "type": "youtube",
-    "payload": "40GqAOnQGoA"
-  },
-  {
-    "id": "radiogagagyergyo",
-    "name": "GAGA Gyergyó",
-    "genre": "Rádió Gaga Gyergyószentmiklós",
-    "logo": "🎸",
-    "type": "native_mp3",
-    "payload": "https://stream.igenbiza.com/gye?1792185529"
-  },
-  {
-    "id": "radiogagarock",
-    "name": "GAGA Rock",
-    "genre": "Rádió Gaga Rock",
-    "logo": "🎸",
-    "type": "native_mp3",
-    "payload": "https://stream.igenbiza.com/rck?1792186745"
-  },
-  {
-    "id": "radiogagahun",
-    "name": "100 % Magyar",
-    "genre": "Rádió Gaga 100 % Magyar zene",
-    "logo": "🎸",
-    "type": "native_mp3",
-    "payload": "https://stream.igenbiza.com/hun?1792187195"
-  },
-  {
-    "id": "radiogagagold",
-    "name": "Rádió GAGA Gold",
-    "genre": "Gaga Gold",
-    "logo": "🎸",
-    "type": "native_mp3",
-    "payload": "https://stream.igenbiza.com/gld?1792187343"
-  },
-  {
-    "id": "lepesradio",
-    "name": "Lépés Rádió",
-    "genre": "It's rock baby! A legjobb rock slágerek",
-    "logo": "🎸",
-    "type": "native_mp3",
-    "payload": "https://lepesradio.hu/live.mp3"
+    "payload": "40GqAOnQGoA",
+    "show": false
   }
 ]

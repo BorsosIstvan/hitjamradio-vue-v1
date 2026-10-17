@@ -12,7 +12,7 @@ const playerStore = usePlayerStore();
       <span style="font-size: 14px; opacity: 0.8; display: block; margin-top: 5px;">
         <span v-if="playerStore.isLoading">🔄 CSATLAKOZÁS...</span>
         <span v-else-if="playerStore.currentStation.type === 'youtube'">⚡ KATTINTS A VIDEÓRA A HANGHOZ</span>
-        <span v-else>⚡ ÉLŐ ADÁS SZÓL</span>
+        <span v-else>⚡ ÉLŐ ADÁS SZÓL<p> {{playerStore.currentStation.genre}}</p></span>
       </span>
     </div>
     
