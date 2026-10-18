@@ -82,11 +82,11 @@
   },
   {
     "id": "proba",
-    "name": "Proba FM",
+    "name": "Proba FM Oxigen",
     "genre": "Kísérleti tesztcsatorna és háttérzene",
     "logo": "🛠️",
     "type": "native_mp3",
-    "payload": "https://icast.connectmedia.hu/5002/live.mp",
+    "payload": "https://oxygenmusic.hu:8443/oxygenmusic_128",
     "show": true
   },
   {
@@ -124,5 +124,14 @@
     "type": "youtube",
     "payload": "40GqAOnQGoA",
     "show": false
+  },
+  {
+    "id": "oxigenmusic",
+    "name": "Oxigen music",
+    "genre": "Oxigen music online rádió",
+    "logo": "🛠️",
+    "type": "native_mp3",
+    "payload": "https://oxygenmusic.hu:8443/oxygenmusic_128",
+    "show": true
   }
 ]

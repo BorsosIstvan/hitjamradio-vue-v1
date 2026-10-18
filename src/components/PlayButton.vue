@@ -1,5 +1,5 @@
 <script setup>
-import { usePlayerStore } from '../stores/playerStore';
+import { usePlayerStore } from '../stores/playerStoreNow';
 const playerStore = usePlayerStore();
 
 const togglePlay = () => {

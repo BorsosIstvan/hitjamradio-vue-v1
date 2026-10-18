@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import { usePlayerStore } from '../stores/playerStore';
+import { usePlayerStore } from '../stores/playerStoreNow';
 const playerStore = usePlayerStore();
 // Létrehozunk egy szűrt listát, ami csak a show: true adókat tartalmazza
 const visibleStations = computed(() => {

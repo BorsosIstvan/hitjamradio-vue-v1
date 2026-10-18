@@ -1,5 +1,5 @@
 <script setup>
-import { usePlayerStore } from '../stores/playerStore';
+import { usePlayerStore } from '../stores/playerStoreNow';
 const playerStore = usePlayerStore();
 
 </script>
@@ -12,7 +12,7 @@ const playerStore = usePlayerStore();
       <span style="font-size: 14px; opacity: 0.8; display: block; margin-top: 5px;">
         <span v-if="playerStore.isLoading">🔄 CSATLAKOZÁS...</span>
         <span v-else-if="playerStore.currentStation.type === 'youtube'">⚡ KATTINTS A VIDEÓRA A HANGHOZ</span>
-        <span v-else>⚡ ÉLŐ ADÁS SZÓL<p> {{playerStore.currentStation.genre}}</p></span>
+        <span v-else>⚡ ÉLŐ ADÁS SZÓL<p> {{playerStore.trackTitle}}</p></span>
       </span>
     </div>
     
