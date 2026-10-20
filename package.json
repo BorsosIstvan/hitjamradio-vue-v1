@@ -1,6 +1,6 @@
 {
-  "name": "hitjamradio-vue-v2",
-  "version": "0.0.0",
+  "name": "hitjamradio",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
