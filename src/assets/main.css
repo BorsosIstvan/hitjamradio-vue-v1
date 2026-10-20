@@ -12,10 +12,6 @@ html, body {
   padding: 0;
   background-color: var(--bg-dark);
   font-family: 'Segoe UI', Roboto, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* A HitJam-Party fő mobil kerete */
@@ -36,6 +32,23 @@ html, body {
   margin: 10px auto; 
   text-align: center;
   color: var(--primary-color); 
+}
+
+/* Hajszálvékony neon narancs választóvonal az app-containeren belül */
+.app-container hr {
+  border: none;
+  height: 1px;
+  background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Hajszálvékony neon narancs keret a kijelzönek */
+.display {
+  border: 1px solid color-mix(in srgb, var(--primary-color) 40%, transparent);
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 15px;
 }
 
 /* HitJam gomb alapstílus */
