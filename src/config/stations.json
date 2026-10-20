@@ -1,0 +1,34 @@
+[
+  {
+    "id": "petofi",
+    "name": "Petőfi Rádió",
+    "genre": "Mai magyar zenék",
+    "logo": "🎤",
+    "type": "youtube",
+    "payload": "obO_OBfncJg"
+  },
+  {
+    "id": "radio1",
+    "name": "Rádió 1",
+    "genre": "A mai igazi mai slágerek",
+    "logo": "🔊",
+    "type": "youtube",
+    "payload": "YAK6X1XroEM"
+  },
+  {
+    "id": "hitsradio1",
+    "name": "HITS radio 1",
+    "genre": "Top Hits 2026",
+    "logo": "🎵",
+    "type": "youtube",
+    "payload": "3MOrgUjiigE"
+  },
+  {
+    "id": "pophitsradio",
+    "name": "Pop hits radio",
+    "genre": "Pop Hits 2026",
+    "logo": "🎵",
+    "type": "youtube",
+    "payload": "40GqAOnQGoA"
+  }
+]
