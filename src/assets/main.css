@@ -1,4 +1,6 @@
-/* 1. SZÍNVÁLTOZÓK DEFINIÁLÁSA A PROJEKT TETEJÉN */
+/* ==========================================================================
+   1. SZÍNVÁLTOZÓK DEFINIÁLÁSA A PROJEKT TETEJÉN
+   ========================================================================== */
 :root {
   --bg-dark: #0b0c10;        /* A mélyfekete alap háttér */
   --bg-gradient-top: #160c1b; /* A fenti lilás átmenet */
@@ -6,7 +8,9 @@
   --text-light: #ffffff;      /* Fehér szövegekhez */
 }
 
-/* Globális alapok felülírása a sötét, prémium háttérhez */
+/* ==========================================================================
+   2. GLOBÁLIS ALAPOK ÉS BÁZIS RESET (Minden elem tiszta lappal indul)
+   ========================================================================== */
 html, body {
   margin: 0;
   padding: 0;
@@ -14,7 +18,45 @@ html, body {
   font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
-/* A HitJam-Party fő mobil kerete */
+/* Sima hr alapértelmezett formázása */
+hr {
+  border: none;
+  height: 1px;
+  background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Sima input alapértelmezett formázása */
+input {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 69, 0, 0.3);
+  color: var(--text-light);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+/* BUTTON RESET: Letakarítjuk a böngészők gyári ronda gomb stílusait, 
+   hogy a .hitjam-btn és a .quiz-btn is tiszta alapról építkezzen */
+button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+/* ==========================================================================
+   3. STRUKTÚRA ÉS KONTÉNEREK
+   ========================================================================== */
 .app-container {
   position: relative;
   overflow: hidden;
@@ -34,16 +76,9 @@ html, body {
   color: var(--primary-color); 
 }
 
-/* Hajszálvékony neon narancs választóvonal az app-containeren belül */
-.app-container hr {
-  border: none;
-  height: 1px;
-  background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
-  width: 90%;
-  margin: 20px auto;
-}
+/* Az .app-container hr-edet átirányítottuk a globális hr-re, ez a sor törölhető, 
+   ha a fenti globális hr beállítást használod! */
 
-/* Hajszálvékony neon narancs keret a kijelzönek */
 .display {
   border: 1px solid color-mix(in srgb, var(--primary-color) 40%, transparent);
   border-radius: 20px;
@@ -51,19 +86,17 @@ html, body {
   padding: 15px;
 }
 
-/* HitJam gomb alapstílus */
+/* ==========================================================================
+   4. HITJAM OSZTÁLY ALAPÚ GOMBOK (A kerek, neon gombok)
+   ========================================================================== */
 .hitjam-btn {
-  background: transparent;
-  color: inherit;
   border: 2px solid currentColor;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 30px; /* Szép kerek */
   margin: 15px auto;
   display: inline-flex;
   align-items: center;
@@ -82,7 +115,6 @@ html, body {
   transform: scale(0.98);
 }
 
-/* Vészjóslóbb, pirosas dizájn megállításhoz */
 .hitjam-btn-logout {
   color: #ff3333;
   border: 2px dashed #ff3333;
@@ -94,7 +126,44 @@ html, body {
   box-shadow: 0 0 15px rgba(255, 51, 51, 0.6);
 }
 
-/* Üzenet dobozok */
+/* ==========================================================================
+   5. RÁDIÓADÓ / KVÍZ RÁCS ÉS GOMBOK (A szögletesebb gombok)
+   ========================================================================== */
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.quiz-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid color-mix(in srgb, var(--primary-color) 40%, transparent); /* Frissítve a halvány neon trükkel! */
+  padding: 20px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px; /* Szögletesebb, kapszula helyett */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Kitölti a grid cellát */
+  box-sizing: border-box;
+}
+
+.quiz-btn:hover {
+  border-color: var(--primary-color);
+  background: rgba(255, 69, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.quiz-btn:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   6. EGYÉB KOMPONENSEK (Alerts, Video, Footer)
+   ========================================================================== */
 .hitjam-alert {
   padding: 15px;
   border-radius: 12px;
@@ -115,42 +184,6 @@ html, body {
   color: #00ff64;
 }
 
-/* Kvíz gombok elrendezése */
-.quiz-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 20px 0;
-}
-
-/* Egyedi nagy rádióadó gomb stílus */
-.quiz-btn {
-  background: rgba(0, 0, 0, 0.5);
-  color: inherit;
-  border: 2px solid rgba(255, 69, 0, 0.4);
-  padding: 20px 10px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.quiz-btn:hover {
-  border-color: #ff4500;
-  background: rgba(255, 69, 0, 0.1);
-  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
-}
-
-.quiz-btn:active {
-  transform: scale(0.95);
-}
-
-/* Lábléc stílus */
 .hitjam-footer {
   margin-top: auto;
   padding-top: 15px;
@@ -163,24 +196,18 @@ html, body {
   width: 100%;
 }
 
-/* HitJam-Party Videó Lejátszó Konténer */
 .hitjam-video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Prémium szélesvásznú arány */
+  padding-top: 56.25%;
   background: #000000;
-  
-  /* Lekerekített sarkok és dögös neon-orany izzás, pont mint a HitJam gomboknál */
   border: 2px solid #ff4500;
   border-radius: 20px; 
   overflow: hidden;
   box-shadow: 0 0 25px rgba(255, 69, 0, 0.4);
-  
-  /* Sima átmenet, amikor megjelenik a képernyőn */
   animation: hitjam-fade-in 0.4s ease;
 }
 
-/* Az iframe teljesen kitölti a lekerekített konténert */
 .hitjam-iframe {
   position: absolute;
   top: 0;
@@ -190,25 +217,40 @@ html, body {
   border: 0;
 }
 
-/* Finom megjelenési animáció */
 @keyframes hitjam-fade-in {
-  from { 
-    opacity: 0; 
-    transform: scale(0.96); 
-  }
-  to { 
-    opacity: 1; 
-    transform: scale(1); 
-  }
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
 }
-.hitjam-input {
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(255, 69, 0, 0.3); /* Finom narancs keret */
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px;
-  border-radius: 15px;
-  outline: none;
-  transition: border-color 0.2s ease;
+
+/* A .hitjam-input-ot felvittük globális input szintre a tetejére! */
+
+/* HitJam Status Konténer és belső elemei */
+.hitjam-status-container {
+  margin: 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hitjam-status-container .status-logo {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.hitjam-status-container .status-title {
+  font-size: 20px;
+  display: block;
+}
+
+.hitjam-status-container .status-info {
+  font-size: 14px;
+  opacity: 0.8;
+  display: block;
+  margin-top: 5px;
+}
+
+.hitjam-status-container .status-track {
+  margin: 5px 0 0 0; /* Eltüntetjük a p tag alapértelmezett nagy margóit */
+  font-weight: normal;
+  color: var(--text-light); /* Kiemeljük a szám címét fehér színnel */
 }
