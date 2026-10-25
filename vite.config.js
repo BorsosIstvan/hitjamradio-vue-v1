@@ -12,7 +12,8 @@ export default defineConfig({
       injectRegister: 'inline',
       manifest : {
         name: 'HitJamRadio',
-        short_name: 'HitJam',
+        short_name: 'HJRadio',
+        start_url: 'https://radio.hitjamparty.com',
         description: 'Egyedi, reklámmentes internetes rádió autós módhoz',
         theme_color: '#0b0c10',
         background_color: '#0b0c10',
